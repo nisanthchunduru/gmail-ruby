@@ -2,6 +2,20 @@
 
 Ruby gem for Gmail's API
 
+## Installation
+
+Add the gem to your Rails app's Gemfile
+
+```ruby
+gem "gmail", git: "https://github.com/nisanth074/gmail", branch: "main"
+```
+
+and bundle install
+
+```bash
+bundle install
+```
+
 ## Usage
 
 ```ruby
@@ -25,7 +39,5 @@ puts message.retrieve("format" => "raw").raw
 
 ## Todos
 
-- Add a gemspec file
-- Add Installation instructions
 - Port tests from the app
 - Modify the `Gmail::Message.raw` method to fetch the message in the `raw` format so gem users don't have to do it themselves
