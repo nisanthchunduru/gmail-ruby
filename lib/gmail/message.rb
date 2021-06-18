@@ -25,9 +25,10 @@ class Gmail
       end
     end
 
-    def initialize(gmail, properties)
+    def initialize(gmail, properties, format = nil)
       @gmail = gmail
       @properties = properties
+      @format = format
     end
 
     def id
@@ -66,6 +67,10 @@ class Gmail
 
     def headers
       @properties["payload"]["headers"]
+    end
+
+    def snippet
+      @properties["snippet"]
     end
 
     def raw
