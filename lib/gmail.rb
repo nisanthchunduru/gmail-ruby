@@ -1,3 +1,17 @@
+require "gmail/version"
+
+require "gmail/resource"
+require "gmail/resource_collection"
+
+require "gmail/profile"
+require "gmail/message"
+require "gmail/watch"
+require "gmail/push_notification"
+require "gmail/history_item"
+
+require "gmail/message_collection"
+require "gmail/history"
+
 class Gmail
   class ResourceNotFound < StandardError; end
 
