@@ -31,7 +31,7 @@ messages.each { |message| puts message.snippet }
 
 # Find a message by its RFC 2822 Message-ID
 message_id = "0B.41.02024.806BCC06@ap.mta1vrest.cc.prd.sparkpost"
-message = gmail.message.find_message_by_message_id(message_id)
+message = gmail.find_message_by_message_id(message_id)
 
 # Fetch a message's raw and print it
 puts message.retrieve("format" => "raw").raw
