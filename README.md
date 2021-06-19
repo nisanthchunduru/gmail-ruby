@@ -39,6 +39,7 @@ puts message.retrieve("format" => "raw").raw
 
 ## Todos
 
-- Add a license
 - Port tests from the app
 - Modify the `Gmail::Message.raw` method to fetch the message in the `raw` format so gem users don't have to do it themselves
+- Add a license
+- Publish to rubygems.org
