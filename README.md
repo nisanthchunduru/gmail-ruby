@@ -7,7 +7,7 @@ Ruby gem for Gmail's API
 Add the gem to your Rails app's Gemfile
 
 ```ruby
-gem "gmail", git: "https://github.com/nisanth074/gmail", branch: "main"
+gem "gmail", git: "https://github.com/nisanthchunduru/gmail-ruby", branch: "main"
 ```
 
 and bundle install
